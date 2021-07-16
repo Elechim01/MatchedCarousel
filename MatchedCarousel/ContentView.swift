@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        if #available(iOS 15.0, *){
+            HomeView()
+        }else{
         Text("Hello, world!")
             .padding()
+        }
     }
 }
 
